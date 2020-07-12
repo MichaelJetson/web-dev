@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	</head>
+	<body class="bg-dark">
+		<div>
+		<div id="slideshow">
+			<h2><u>Slideshow</u></h2>
+			<div style="text-align: center; position: relative; margin: auto; margin-bottom: 10px;">
+				<label ><h4>Enter Seconds:</h4></label>
+				<input id="second" type="text" placeholder="Enter seconds here" style="font-size: 1vw">
+				<button onclick="showSlides();" class="btn btn-primary">
+					Submit
+				</button>
+			</div>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+		  			<div class="numbertext">
+		  				1
+		  			</div>
+		  			<img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/_finalcap_card.jpg" width="275px" height="194px">
+		  			
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			2
+			  		</div>
+			  		<img src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/002irm_ons_mas_mob_01_0.jpg" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			3
+			  		</div>
+			  		<img src="https://i.ytimg.com/vi/MAfIvBgChjQ/maxresdefault.jpg" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			4
+			  		</div>
+			  		<img src="https://img1.looper.com/img/gallery/the-real-reason-captain-marvel-had-such-a-tiny-role-in-endgame/intro-1557949097.jpg" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			5
+			  		</div>
+			  		<img src="https://pmcvariety.files.wordpress.com/2019/12/black-widow-scarjo.jpg?w=681&h=383&crop=1" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			6 
+			  		</div>
+			  		<img src="https://cms.qz.com/wp-content/uploads/2016/05/black-panther-marvel-e1462460773100.jpg?quality=75&strip=all&w=1600&h=900&crop=1" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			7 
+			  		</div>
+			  		<img src="https://img1.looper.com/img/gallery/why-marvel-wont-give-hawkeye-a-movie/intro.jpg" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		
+			  		<img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/1/13/Thor-EndgameProfile.jpg/revision/latest/top-crop/width/360/height/360?cb=20190423174911" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		
+			  		<img src="https://insidethemagic-119e2.kxcdn.com/wp-content/uploads/2019/05/disney-confirms-tom-hiddleston-in-loki-tv-series-1159835-1280x0.jpeg" width="275px" height="194px">
+			  		
+				</div>
+				<div class="mySlides fade">
+			  		<div class="numbertext">
+			  			10
+			  		</div>
+			  		<img src="https://img.cinemablend.com/filter:scale/quill/2/6/5/6/6/c/26566cd3da4ad7688a1bc7fd7b81d18da6ba827d.jpg?mw=600" width="275px" height="194px">
+			  		
+				</div>
+			</div>
+			<br>
+			<div style="text-align:center">
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+		  		<span class="dot"></span>
+			</div>
+		</div>
+		<hr>
+		<div id="calculator" style="margin-top: 5px;">
+			<h2><u>Calculator</u></h2>
+			<div style="width: 200px; position: relative; margin: auto;">
+				<label>Number1:</label>
+				<input style="margin-bottom: 5px;" type="text" id="num1">
+				<label>Number2:</label>
+				<input style="margin-bottom: 5px;" type="text" id="num2">
+				<label>Result:</label>
+				<input type="text" id="res" style="margin-bottom: 5px;">
+			</div>
+			<div style="margin-top: 5px; margin-left: 466px; margin-right: 466px; position: relative; text-align: center;">
+				<button onclick="addition();" class="btn btn-primary">Addition</button>
+				<button onclick="subtraction();" class="btn btn-primary">Subtraction</button>
+				<button onclick="multiplication();" class="btn btn-primary">Multiplication</button>
+				<button onclick="division();" class="btn btn-primary">Division</button>
+			</div>
+		</div>
+		<hr>
+		<div id="validation">
+			<h2><u>Email Validation</u></h2>
+			<div style="position: relative; margin: auto; text-align: center;">
+				<label style="text-align: center;"><h4>Email:</h4></label>
+				<input type="email" placeholder="Enter Email Here" id="myemail" onkeyup="validate();" style="text-align: center ;font-size: 1vw">
+			</div>
+		</div>
+		<script>
+			var slideIndex = 0;
+			function showSlides() {
+				if (document.getElementById("second").value) {
+					var x = document.getElementById("second").value;
+				}
+				else {
+					var x = 100000000000;
+				}
+			  	var i;
+			  	var slides = document.getElementsByClassName("mySlides");
+			  	var dots = document.getElementsByClassName("dot");
+			  	for (i = 0; i < slides.length; i++) {
+			    	slides[i].style.display = "none";
+			  	}
+			  	slideIndex++;
+			  	if (slideIndex > slides.length) {
+			  		slideIndex = 1
+			  	}
+			  	for (i = 0; i < dots.length; i++) {
+			    	dots[i].className = dots[i].className.replace(" active", "");
+			  	}
+			  	slides[slideIndex-1].style.display = "block";
+			  	dots[slideIndex-1].className += " active";
+			  	setTimeout(showSlides, x * 1000);
+			}
+			function addition() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a + b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function subtraction() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a - b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function multiplication() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a * b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function division() {
+				var a = document.getElementById("num1").value;
+				var b = document.getElementById("num2").value;
+				reg = /[0-9]+$/;
+				if (reg.test(a) && reg.test(b)) {
+					a = parseInt(a);
+					b = parseInt(b);
+					document.getElementById("res").value = (a / b);
+				}
+				else {
+					document.getElementById("res").value = "Invalid Input";
+				}
+			}
+			function validate() {
+				var myemail = document.getElementById("myemail");
+				var reg = /^\w+([\.-]?\w+)@\w+([\.-]?\w+)(\.\w{2,3})+$/;
+            	if (reg.test(myemail.value) == true) {
+            		myemail.style.background = "green";
+            	}
+            	if (reg.test(myemail.value) == false) {
+                	myemail.style.background = "red";
+            	}
+			}
+		</script>
+	</body>
+</html>
